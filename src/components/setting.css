@@ -4,9 +4,9 @@
   background-color: #1a2125;
   margin: 30px auto 0 auto;
   padding: 10px;
+  color: #fff;
 }
 .settingHeading {
-  color: #fff;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -16,7 +16,6 @@
 }
 .settingHeading button {
   background-color: #244967;
-  color: #fff;
   border: none;
   cursor: pointer;
   padding: 4px 10px;
@@ -27,10 +26,15 @@
 .settingNav {
   width: 100%;
 }
-.settingNav ul li {
+.settingNavTab {
   list-style: none;
   background-color: #244967;
   padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.settingNavTab:hover {
+  background-color: #2c6391;
 }
 .settingNav ul {
   display: flex;
@@ -38,6 +42,48 @@
   gap: 3px;
   border-radius: 5px;
 }
-.hide{
-    display: none;
+.active {
+  background-color: #2c6391;
 }
+.tabContent {
+  padding-top: 20px;
+}
+.tabContent div{
+    margin: 8px 0;
+}
+.viewportMode {
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-between; */
+  /* margin-bottom: 10px; */
+}
+
+.viewportMode select {
+  /* padding: 0 5px; */
+  border-radius: 5px;
+  border: none;
+  background-color: #2c6391;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.viewportMode option {
+  background-color: #2b2b2b;
+  font-weight: 600;
+}
+
+.chatOpacity {
+  width: 95%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr;
+  grid-template-rows: auto auto;
+}
+.chatOpacity input{
+    cursor: pointer;
+}
+.pointer {
+  cursor: pointer;
+}  
