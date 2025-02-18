@@ -1,0 +1,43 @@
+.setting {
+  width: 400px;
+  height: 500px;
+  background-color: #1a2125;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+}
+.settingHeading {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.settingHeading h2 {
+  font-weight: 600;
+}
+.settingHeading button {
+  background-color: #244967;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.settingNav {
+  width: 100%;
+}
+.settingNav ul li {
+  list-style: none;
+  background-color: #244967;
+  padding: 5px 10px;
+}
+.settingNav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 5px;
+}
+.hide{
+    display: none;
+}

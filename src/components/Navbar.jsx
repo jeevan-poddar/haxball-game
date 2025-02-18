@@ -8,7 +8,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav>
+      <nav className="navbar">
         <ul>
           <li>
             <NavLink className={activeTab+ " gameName"} to="/">
