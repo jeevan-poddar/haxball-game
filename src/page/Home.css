@@ -1,0 +1,43 @@
+.body {
+  background-color: peachpuff;
+  height: 100vh;
+}
+.homeContainer {
+  margin: 10vh auto;
+  width: 700px;
+  height: 425px;
+}
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* height: 100%; */
+  background-color: rgba(0, 0, 0, 0.226);
+  font-size: 26px;
+  padding: 50px;
+  border-radius: 50px;
+  position: relative;
+}
+.btn_play_now {
+  position: absolute;
+  background-color: rgb(32, 150, 38);
+  color: white;
+  border-radius: 50px;
+  bottom: -40px;
+  left: 210px;
+  padding: 2px;
+  text-decoration: none;
+}
+.btn_play_now p {
+  padding: 15px 60px;
+  border-radius: 50px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 35px;
+}
+.btn_play_now:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.692);
+}

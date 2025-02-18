@@ -1,0 +1,108 @@
+.serverContainer {
+  width: 600px;
+  height: 550px;
+  margin: 10px auto;
+  background-color: #1a2125;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.serverContainerHeading {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.serverContainerHeading .left {
+  font-size: 22px;
+  font-weight: 600;
+}
+.serverContainerHeading .right {
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+}
+.tips {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.rooms {
+  /* background-color: blue; */
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.roomsLeft {
+  width: 70%;
+  height: 450px;
+  /* background-color: yellow; */
+  padding: 5px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.roomsRight {
+  width: 30%;
+  height: 100%;
+  /* background-color: palegreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.roomsRight .btn_box {
+  /* background: rgb(146, 138, 54); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.roomsRight .btn_box button {
+  background-color: #244967;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.serverHeading {
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  border-bottom: 2px solid #1a2125;
+  margin-bottom: 5px;
+  background-color: #1a2125;
+}
+
+.server:hover {
+  cursor: pointer;
+  background-color: #244967;
+}
+.servers {
+  overflow-y: scroll;
+}
+.server {
+  width: 100%;
+  display: flex;
+}
+.c1 {
+  width: 50%;
+}
+.c2 {
+  width: 15%;
+  text-align: center;
+}
+.c3 {
+  text-align: center;
+  width: 15%;
+}
+.c4 {
+  text-align: center;
+  width: 15%;
+}
+.hide {
+  display: none;
+}
