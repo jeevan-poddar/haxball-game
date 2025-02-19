@@ -1,27 +1,36 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import "./playNick.css";
-import "./playServer.css";
 import ChooseNick from "../components/ChooseNick";
 import Server from "../components/Server";
 import Setting from "../components/setting";
+import CreateRoom from "../components/createRoom";
 
 const Play = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [setting, setSetting] = useState(false);
-  
+  const [playActiveTab, setPlayActiveTab] = useState("chooseNick");
+  const [nickname, setNickname] = useState("");
 
   return (
     <>
       <Navbar />
-      <ChooseNick isVisible={isVisible} setIsVisible={setIsVisible} />
-      <Server
-        isVisible={isVisible}
-        setIsVisible={setIsVisible}
-        setting={setting}
-        setSetting={setSetting}
+      <ChooseNick
+        playActiveTab={playActiveTab}
+        setPlayActiveTab={setPlayActiveTab}
+        nickname={nickname}
+        setNickname={setNickname}
       />
-      <Setting setting={setting} setSetting={setSetting} />
+      <Server
+        playActiveTab={playActiveTab}
+        setPlayActiveTab={setPlayActiveTab}
+      />
+      <Setting
+        playActiveTab={playActiveTab}
+        setPlayActiveTab={setPlayActiveTab}
+      />
+      <CreateRoom
+        playActiveTab={playActiveTab}
+        setPlayActiveTab={setPlayActiveTab}
+        nickname={nickname}
+      />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./setting.css"; // Import regular CSS
+import styles from "./Setting.module.css"; // Import CSS Module
 
-const Setting = ({ setting, setSetting }) => {
+const Setting = (props) => {
   const [activeTab, setActiveTab] = useState("sound");
   const [chatOpacity, setChatOpacity] = useState(0.8);
   const [chatFocous, setChatFocous] = useState(140);
@@ -14,22 +14,26 @@ const Setting = ({ setting, setSetting }) => {
   ];
 
   return (
-    <div className={`setting ${setting ? "" : "hide"}`}>
-      <div className="settingHeading">
+    <div
+      className={`${styles.setting} ${
+        props.playActiveTab === "setting" ? "" : styles.hide
+      }`}
+    >
+      <div className={styles.settingHeading}>
         <h2>Settings</h2>
-        <button onClick={() => setSetting(!setting)}>Close</button>
+        <button onClick={() => props.setPlayActiveTab("server")}>Close</button>
       </div>
       <hr className="horizontalLine" />
 
       {/* Navigation Tabs */}
-      <nav className="settingNav">
+      <nav className={styles.settingNav}>
         <ul>
           {tabs.map((tab, index) => (
             <li
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`settingNavTab ${
-                activeTab === tab.id ? "active" : ""
+              className={`${styles.settingNavTab} ${
+                activeTab === tab.id ? styles.active : ""
               }`}
               style={{
                 borderRadius:
@@ -47,48 +51,56 @@ const Setting = ({ setting, setSetting }) => {
       </nav>
 
       {/* Tab Content */}
-      <div className={`tabContent ${activeTab === "sound" ? "" : "hide"}`}>
-        <div className="pointer" >Sounds enabled</div>
-        <div className="pointer" >Chat sound enabled</div>
-        <div className="pointer" >Nick highlight sound enabled</div>
-        <div className="pointer" >Crowd sound enabled</div>
+      <div
+        className={`${styles.tabContent} ${
+          activeTab === "sound" ? "" : styles.hide
+        }`}
+      >
+        <div className={styles.pointer}>Sounds enabled</div>
+        <div className={styles.pointer}>Chat sound enabled</div>
+        <div className={styles.pointer}>Nick highlight sound enabled</div>
+        <div className={styles.pointer}>Crowd sound enabled</div>
       </div>
-      <div className={`tabContent ${activeTab === "video" ? "" : "hide"}`}>
-        <div className="viewportMode">
+      <div
+        className={`${styles.tabContent} ${
+          activeTab === "video" ? "" : styles.hide
+        }`}
+      >
+        <div className={styles.selectingSetting}>
           Viewport Mode:
-          <select name="Viewport_Mode" id="Viewport_Mode">
+          <select name="Viewport_Mode">
             <option value="Dynamic">Dynamic</option>
-            <option value="Restricted 840x410">Restricted 840x410</option>
-            <option value="Full 1x zoom">Full 1x zoom</option>
-            <option value="Full 1.25x zoom">Full 1.25x zoom</option>
-            <option value="Full 1.5x zoom">Full 1.5x zoom</option>
-            <option value="Full 1.75x zoom">Full 1.75x zoom</option>
-            <option value="Full 2x zoom">Full 2x zoom</option>
-            <option value="Full 2.25x zoom">Full 2.25x zoom</option>
-            <option value="Full 2.5x zoom">Full 2.5x zoom</option>
+            <option value="Restricted_840x410">Restricted 840x410</option>
+            <option value="Full_1x_zoom">Full 1x zoom</option>
+            <option value="Full_1.25x_zoom">Full 1.25x zoom</option>
+            <option value="Full_1.5x_zoom">Full 1.5x zoom</option>
+            <option value="Full_1.75x_zoom">Full 1.75x zoom</option>
+            <option value="Full_2x_zoom">Full 2x zoom</option>
+            <option value="Full_2.25x_zoom">Full 2.25x zoom</option>
+            <option value="Full_2.5x_zoom">Full 2.5x zoom</option>
           </select>
         </div>
-        <div className="viewportMode">
+        <div className={styles.selectingSetting}>
           FPS Limit:
-          <select name="Viewport_Mode" id="Viewport_Mode">
-            <option value="Dynamic">None(Rcommended)</option>
-            <option value="Restricted 840x410">30</option>
+          <select name="fpsLimit" id="Viewport_Mode">
+            <option value="none">None(Rcommended)</option>
+            <option value="30">30</option>
           </select>
         </div>
-        <div className="viewportMode">
+        <div className={styles.selectingSetting}>
           Resolution Scaling:
-          <select name="Viewport_Mode" id="Viewport_Mode">
+          <select name="resolutionScaling">
             <option value="100%">100%</option>
             <option value="75%">75%</option>
             <option value="50%">50%</option>
             <option value="25%">25%</option>
           </select>
         </div>
-        <div className="pointer" >Use low latency canvas</div>
-        <div className="pointer" >Custom team colors enabled</div>
-        <div className="pointer" >Show chat indicators</div>
-        <div className="pointer" >Show player avatars</div>
-        <div className="chatOpacity">
+        <div className={styles.pointer}>Use low latency canvas</div>
+        <div className={styles.pointer}>Custom team colors enabled</div>
+        <div className={styles.pointer}>Show chat indicators</div>
+        <div className={styles.pointer}>Show player avatars</div>
+        <div className={styles.inputRange}>
           <p>Chat Opacity</p> {chatOpacity}
           <input
             type="range"
@@ -108,18 +120,26 @@ const Setting = ({ setting, setSetting }) => {
             onChange={(e) => setChatFocous(e.target.value)}
           />
         </div>
-        <div className="viewportMode">
+        <div className={styles.selectingSetting}>
           Chat background width:
-          <select name="Viewport_Mode" id="Viewport_Mode">
+          <select name="CBW">
             <option value="Compact">Compact</option>
             <option value="Full">Full</option>
           </select>
         </div>
       </div>
-      <div className={`tabContent ${activeTab === "input" ? "" : "hide"}`}>
+      <div
+        className={`${styles.tabContent} ${
+          activeTab === "input" ? "" : styles.hide
+        }`}
+      >
         I am input settings
       </div>
-      <div className={`tabContent ${activeTab === "misc" ? "" : "hide"}`}>
+      <div
+        className={`${styles.tabContent} ${
+          activeTab === "misc" ? "" : styles.hide
+        }`}
+      >
         I am misc settings
       </div>
     </div>

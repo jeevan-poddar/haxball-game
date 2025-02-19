@@ -8,3 +8,7 @@
 .hide {
   display: none;
 }
+.horizontalLine {
+  border: 2px solid red;
+  margin-bottom: 15px;
+}

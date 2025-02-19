@@ -1,43 +1,63 @@
 import React from "react";
 import { NavLink } from "react-router";
-import "./Navbar.css";
+import styles from "./Navbar.module.css"; // Import CSS Module
 
 const Navbar = () => {
-  const activeTab = (e)=>{
- return e.isActive ? "activeTab" : "";
-  };
   return (
-    <>
-      <nav className="navbar">
-        <ul>
-          <li>
-            <NavLink className={activeTab+ " gameName"} to="/">
-              HaxBall
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={activeTab} to="/news">
-              News
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={activeTab} to="/play">
-              Play
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={activeTab} to="/about">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className={activeTab} to="/community">
-              Community
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav className={styles.navbar}>
+      <ul className={styles.navList}>
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              `${isActive ? styles.activeTab : ""} ${styles.gameName}`
+            }
+            to="/"
+          >
+            HaxBall
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.activeTab : styles.link
+            }
+            to="/news"
+          >
+            News
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.activeTab : styles.link
+            }
+            to="/play"
+          >
+            Play
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.activeTab : styles.link
+            }
+            to="/about"
+          >
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.activeTab : styles.link
+            }
+            to="/community"
+          >
+            Community
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

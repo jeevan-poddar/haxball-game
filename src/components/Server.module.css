@@ -50,14 +50,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.roomsRight .btn_box {
+.roomsRight .btnBox {
   /* background: rgb(146, 138, 54); */
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.roomsRight .btn_box button {
+.roomsRight .btnBox button {
   background-color: #244967;
   border: none;
   border-radius: 5px;
@@ -76,7 +76,9 @@
   margin-bottom: 5px;
   background-color: #1a2125;
 }
-
+.horizontalLine2{
+  margin-bottom: 10px;
+}
 .server:hover {
   cursor: pointer;
   background-color: #244967;

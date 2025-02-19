@@ -12,11 +12,10 @@
   height: 100%;
   object-fit: contain;
 }
-form {
+.form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* height: ; */
   background-color: #1a2125;
   color: white;
   padding: 15px;
@@ -30,7 +29,7 @@ form {
   border: 2px solid red;
   margin-bottom: 15px;
 }
-.nickname-lable {
+.nicknameLable {
   background: #244967;
   font-size: 18px;
   display: flex;
@@ -38,7 +37,7 @@ form {
   padding: 4px 4px 4px 8px;
   border-radius: 5px;
 }
-.nickname-lable input {
+.nicknameLable input {
   width: 100%;
   outline: none;
   border: none;
@@ -59,4 +58,8 @@ form {
   outline: none;
   border: none;
   background-color: #244967;
+}
+
+.hide {
+  display: none;
 }

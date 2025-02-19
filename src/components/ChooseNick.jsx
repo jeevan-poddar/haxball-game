@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import styles from "./ChooseNick.module.css";
 
 const ChooseNick = (props) => {
   const {
@@ -8,17 +9,21 @@ const ChooseNick = (props) => {
     watch,
     formState: { errors, isSubmitting },
   } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-    props.setIsVisible(false);
+  const onSubmit = () => {
+    console.log(props.nickname);
+    props.setPlayActiveTab("server");
   };
   return (
-    <div className={`containerNick ${props.isVisible ? "" : "hide"}`}>
-      <img className="logo_play" src="/img/logo.png" alt="" />
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="formHeading">Choose Nickname</div>
-        <hr className="horizontalLine" />
-        <label className="nickname-lable" htmlFor="nickname">
+    <div
+      className={`${styles.containerNick} ${
+        props.playActiveTab === "chooseNick" ? "" : styles.hide
+      }`}
+    >
+      <img className={styles.logo_play} src="/img/logo.png" alt="" />
+      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+        <div className={styles.formHeading}>Choose Nickname</div>
+        <hr className={styles.horizontalLine} />
+        <label className={styles.nicknameLable} htmlFor="nickname">
           Nickname:
           <input
             autoComplete="off"
@@ -31,13 +36,15 @@ const ChooseNick = (props) => {
             })}
             type="text"
             placeholder="Enter Nickname"
+            value={props.nickname}
+            onChange={(e) => props.setNickname(e.target.value)}
           />
         </label>
         {errors.nickname && (
-          <div className="nickname_error">{errors.nickname.message}</div>
+          <div className={styles.nickname_error}>{errors.nickname.message}</div>
         )}
         <input
-          className="submit_btn"
+          className={styles.submit_btn}
           disabled={isSubmitting}
           type="submit"
           value="OK"
