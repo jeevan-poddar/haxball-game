@@ -1,0 +1,39 @@
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbar ul li {
+  list-style: none;
+  height: 100%;
+}
+.navbarTab {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  box-sizing: content-box;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px 20px;
+}
+/* .navbarTab:hover, */
+.activeTab {
+  color: #bfcfe1;
+}
+.gameName {
+  font-weight: 600;
+  background-color: rgb(36, 73, 103);
+}
+.gameName:hover {
+  color: white;
+}

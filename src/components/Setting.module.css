@@ -1,0 +1,93 @@
+.setting {
+  width: 400px;
+  height: 500px;
+  background-color: #1a2125;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+  color: #fff;
+}
+.settingHeading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.settingHeading h2 {
+  font-weight: 600;
+}
+.settingHeading button {
+  padding: 4px 10px;
+  font-weight: 500;
+}
+.settingNav {
+  width: 100%;
+}
+.settingNavTab {
+  list-style: none;
+  background-color: #244967;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.settingNavTab:hover {
+  background-color: #2c6391;
+}
+.settingNav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 5px;
+}
+.active {
+  background-color: #2c6391;
+}
+.tabContent {
+  padding-top: 20px;
+}
+.tabContent div {
+  margin: 8px 0;
+}
+.selectingSetting {
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-between; */
+  /* margin-bottom: 10px; */
+}
+
+.selectingSetting select {
+  /* padding: 0 5px; */
+  border-radius: 5px;
+  border: none;
+  background-color: #2c6391;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+    -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
+}
+.selectingSetting option {
+  background-color: #2b2b2b;
+  font-weight: 600;
+}
+
+.inputRange {
+  width: 95%;
+  height: 55px;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 5px;
+}
+.inputRange input {
+  cursor: pointer;
+}
+.pointer {
+  cursor: pointer;
+}
+
+
+.hide{
+  display: none;
+}
