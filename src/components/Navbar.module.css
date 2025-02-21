@@ -15,7 +15,7 @@
   list-style: none;
   height: 100%;
 }
-.navbar ul li a {
+.navbarTab {
   display: flex;
   align-items: center;
   height: 35px;
@@ -26,7 +26,7 @@
   font-family: "Open Sans", sans-serif;
   padding: 0px 20px;
 }
-.navbar ul li a:hover,
+/* .navbarTab:hover, */
 .activeTab {
   color: #bfcfe1;
 }

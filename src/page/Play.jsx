@@ -4,6 +4,7 @@ import ChooseNick from "../components/ChooseNick";
 import Server from "../components/Server";
 import Setting from "../components/setting";
 import CreateRoom from "../components/createRoom";
+import JoinRoom from "../components/joinRoom";
 
 const Play = () => {
   const [playActiveTab, setPlayActiveTab] = useState("chooseNick");
@@ -31,8 +32,12 @@ const Play = () => {
         setPlayActiveTab={setPlayActiveTab}
         nickname={nickname}
       />
+      <JoinRoom
+        playActiveTab={playActiveTab}
+        setPlayActiveTab={setPlayActiveTab}
+      />
     </>
-  );
+  ); 
 };
 
 export default Play;

@@ -44,7 +44,7 @@ const ChooseNick = (props) => {
           <div className={styles.nickname_error}>{errors.nickname.message}</div>
         )}
         <input
-          className={styles.submit_btn}
+          className={`${styles.submit_btn} ${"button"}`}
           disabled={isSubmitting}
           type="submit"
           value="OK"

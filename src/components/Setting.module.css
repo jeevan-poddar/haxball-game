@@ -15,14 +15,8 @@
   font-weight: 600;
 }
 .settingHeading button {
-  background-color: #244967;
-  border: none;
-  cursor: pointer;
   padding: 4px 10px;
-  font-size: 16px;
   font-weight: 500;
-  border-radius: 5px;
-  color: white;
 }
 .settingNav {
   width: 100%;

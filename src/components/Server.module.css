@@ -58,16 +58,10 @@
   gap: 5px;
 }
 .roomsRight .btnBox button {
-  background-color: #244967;
-  border: none;
-  border-radius: 5px;
-  color: white;
   font-size: 17px;
   font-weight: 600;
   padding: 5px;
-  cursor: pointer;
 }
-
 .serverHeading {
   width: 100%;
   display: flex;

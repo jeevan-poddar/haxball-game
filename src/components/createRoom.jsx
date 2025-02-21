@@ -73,8 +73,13 @@ const CreateRoom = (props) => {
             Show in room list: {showInRoomList ? "Yes" : "No"}
           </button>
           <div className={styles.asdf}>
-            <button onClick={()=>props.setPlayActiveTab("server")}>Cancel</button>
-            <button>Create</button>
+            <button
+              className="button"
+              onClick={() => props.setPlayActiveTab("server")}
+            >
+              Cancel
+            </button>
+            <button className="button">Create</button>
           </div>
         </form>
       </div>

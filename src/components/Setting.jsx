@@ -21,7 +21,12 @@ const Setting = (props) => {
     >
       <div className={styles.settingHeading}>
         <h2>Settings</h2>
-        <button onClick={() => props.setPlayActiveTab("server")}>Close</button>
+        <button
+          className="button"
+          onClick={() => props.setPlayActiveTab("server")}
+        >
+          Close
+        </button>
       </div>
       <hr className="horizontalLine" />
 

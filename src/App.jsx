@@ -8,7 +8,6 @@ import About from "./page/About";
 import Community from "./page/Community";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>

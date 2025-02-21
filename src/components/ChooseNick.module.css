@@ -52,14 +52,8 @@
 .submit_btn {
   margin: 20px auto 0 auto;
   width: 70px;
-  font-size: 14px;
   padding: 5px 0;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  background-color: #244967;
 }
-
 .hide {
   display: none;
 }

@@ -172,18 +172,32 @@ const Server = (props) => {
         </div>
         <div className={styles.roomsRight}>
           <div className={styles.btnBox}>
-            <button>Refresh</button>
-            <button>Join Room</button>
-            <button onClick={() => props.setPlayActiveTab("createRoom")}>
+            <button className="button">Refresh</button>
+            <button
+              className="button"
+              onClick={() => props.setPlayActiveTab("joinRoom")}
+            >
+              Join Room
+            </button>
+            <button
+              className="button"
+              onClick={() => props.setPlayActiveTab("createRoom")}
+            >
               Create Room
             </button>
           </div>
           <div className={styles.btnBox}>
-            <button>Replays</button>
-            <button onClick={() => props.setPlayActiveTab("setting")}>
+            <button className="button">Replays</button>
+            <button
+              className="button"
+              onClick={() => props.setPlayActiveTab("setting")}
+            >
               Settings
             </button>
-            <button onClick={() => props.setPlayActiveTab("chooseNick")}>
+            <button
+              className="button"
+              onClick={() => props.setPlayActiveTab("chooseNick")}
+            >
               Change Nick
             </button>
           </div>

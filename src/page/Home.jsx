@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { NavLink } from "react-router";
-import "./Home.css";
+import styles from "./Home.module.css";
 
 
 const Home = () => {
@@ -9,12 +9,12 @@ const Home = () => {
     <>
       <div className="body">
         <Navbar />
-        <div className="homeContainer">
-          <img src="/img/logo.png" alt="logo" className="logo" />
-          <div className="homeContent">
+        <div className={styles.homeContainer}>
+          <img src="/img/logo.png" alt="logo" className={styles.logo} />
+          <div className={styles.homeContent}>
             HaxBall is a physics-based multiplayer soccer game where teamwork is
             key.
-            <NavLink to="/play" className="btn_play_now">
+            <NavLink to="/play" className={styles.btn_play_now}>
               <p>Play now!</p>
             </NavLink>
           </div>
