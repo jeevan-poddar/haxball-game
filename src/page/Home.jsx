@@ -12,7 +12,7 @@ const Home = () => {
         <div className={styles.homeContainer}>
           <img src="/img/logo.png" alt="logo" className={styles.logo} />
           <div className={styles.homeContent}>
-            HaxBall is is a physics-based multiplayer soccer game where teamwork is
+            HaxBall is a physics-based multiplayer soccer game where teamwork is
             key.
             <NavLink to="/play" className={styles.btn_play_now}>
               <p>Play now!</p>
