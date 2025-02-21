@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import ChooseNick from "../components/ChooseNick";
 import Server from "../components/Server";
+import Setting from "../components/Setting";
 import CreateRoom from "../components/CreateRoom";
 import JoinRoom from "../components/JoinRoom";
-import Setting from "../components/Setting";
 
 const Play = () => {
   const [playActiveTab, setPlayActiveTab] = useState("chooseNick");
