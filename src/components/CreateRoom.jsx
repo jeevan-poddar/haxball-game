@@ -20,12 +20,12 @@ const CreateRoom = (props) => {
   }, [props.nickname]);
   return (
     <div
-      className={`${styles.createRoomBody} ${
+      className={`${
         props.playActiveTab === "createRoom" ? "" : styles.hide
       }`}
     >
       <div className={styles.conatiner}>
-        <h2 className={styles.heading}>Create is Room</h2>
+        <h2 className={styles.heading}>Create Room</h2>
         <hr className="horizontalLine" />
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="roomName" className={styles.label}>
