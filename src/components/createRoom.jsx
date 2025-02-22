@@ -20,9 +20,7 @@ const CreateRoom = (props) => {
   }, [props.nickname]);
   return (
     <div
-      className={`${styles.createRoomBody} ${
-        props.playActiveTab === "createRoom" ? "" : styles.hide
-      }`}
+      className={`${props.playActiveTab === "createRoom" ? "" : styles.hide}`}
     >
       <div className={styles.conatiner}>
         <h2 className={styles.heading}>Create Room</h2>

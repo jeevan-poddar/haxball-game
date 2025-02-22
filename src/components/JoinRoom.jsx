@@ -13,11 +13,7 @@ const JoinRoom = (props) => {
     // props.setPlayActiveTab("server");
   };
   return (
-    <div
-      className={`${styles.joinRoomBody} ${
-        props.playActiveTab === "joinRoom" ? "" : styles.hide
-      }`}
-    >
+    <div className={`${props.playActiveTab === "joinRoom" ? "" : styles.hide}`}>
       <div className={styles.conatiner}>
         <h2 className={styles.heading}>Join Room</h2>
         <hr className="horizontalLine" />

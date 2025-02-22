@@ -1,13 +1,15 @@
-import React from 'react'
-import Navbar from '../components/Navbar';
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const Community = () => {
   return (
     <>
       <Navbar />
-      <div>I am the About page</div>
+      <div className="main">
+        <div>I am the Community page</div>
+      </div>
     </>
   );
-}
+};
 
-export default Community
+export default Community;

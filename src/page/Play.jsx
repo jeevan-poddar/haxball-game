@@ -13,29 +13,31 @@ const Play = () => {
   return (
     <>
       <Navbar />
-      <ChooseNick
-        playActiveTab={playActiveTab}
-        setPlayActiveTab={setPlayActiveTab}
-        nickname={nickname}
-        setNickname={setNickname}
-      />
-      <Server
-        playActiveTab={playActiveTab}
-        setPlayActiveTab={setPlayActiveTab}
-      />
-      <Setting
-        playActiveTab={playActiveTab}
-        setPlayActiveTab={setPlayActiveTab}
-      />
-      <CreateRoom
-        playActiveTab={playActiveTab}
-        setPlayActiveTab={setPlayActiveTab}
-        nickname={nickname}
-      />
-      <JoinRoom
-        playActiveTab={playActiveTab}
-        setPlayActiveTab={setPlayActiveTab}
-      />
+      <div className="main">
+        <ChooseNick
+          playActiveTab={playActiveTab}
+          setPlayActiveTab={setPlayActiveTab}
+          nickname={nickname}
+          setNickname={setNickname}
+        />
+        <Server
+          playActiveTab={playActiveTab}
+          setPlayActiveTab={setPlayActiveTab}
+        />
+        <Setting
+          playActiveTab={playActiveTab}
+          setPlayActiveTab={setPlayActiveTab}
+        />
+        <CreateRoom
+          playActiveTab={playActiveTab}
+          setPlayActiveTab={setPlayActiveTab}
+          nickname={nickname}
+        />
+        <JoinRoom
+          playActiveTab={playActiveTab}
+          setPlayActiveTab={setPlayActiveTab}
+        />
+      </div>
     </>
   ); 
 };
