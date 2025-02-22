@@ -20,7 +20,7 @@ const CreateRoom = (props) => {
   }, [props.nickname]);
   return (
     <div
-      className={`${styles.createRoomBody} ${
+      className={`${
         props.playActiveTab === "createRoom" ? "" : styles.hide
       }`}
     >
