@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router";
-import styles from "./Navbar.module.css"; // Import CSS Module
+import styles from "../styles/Navbar.module.css"; // Import CSS Module
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState("");

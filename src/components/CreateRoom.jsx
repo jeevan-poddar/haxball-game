@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import styles from "./CreateRoom.module.css";
+import styles from "../styles/CreateRoom.module.css";
 const CreateRoom = (props) => {
   const {
     register,

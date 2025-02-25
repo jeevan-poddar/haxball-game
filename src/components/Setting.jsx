@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Setting.module.css"; // Import CSS Module
+import styles from "../styles/Setting.module.css"; // Import CSS Module
 
 const Setting = (props) => {
   const [activeTab, setActiveTab] = useState("sound");

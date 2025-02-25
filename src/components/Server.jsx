@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Server.module.css";
+import styles from "../styles/Server.module.css";
 
 const Server = (props) => {
   return (
