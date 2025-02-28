@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router";
 import styles from "../styles/Navbar.module.css"; // Import CSS Module
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [activeTab, setActiveTab] = useState("");
   const location = useLocation();
 
@@ -30,7 +30,7 @@ const Navbar = () => {
     }
   }, [location]);
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${props.navbarHide ? styles.hide : ""}`}>
       <ul className={styles.navList}>
         <li>
           <NavLink className={`${styles.gameName} ${styles.navbarTab}`} to="/">

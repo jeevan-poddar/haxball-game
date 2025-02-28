@@ -10,7 +10,8 @@ const CreateRoom = (props) => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    // props.setPlayActiveTab("server");
+    props.setNavbarHide(true);
+    props.setPlayActiveTab("room");
   };
   const [roomName, setRoomName] = useState("");
   const [showInRoomList, setShowInRoomList] = useState(true);
@@ -79,7 +80,11 @@ const CreateRoom = (props) => {
             >
               Cancel
             </button>
-            <button className="button">Create</button>
+            <button className="button"
+              disabled={isSubmitting}
+              type="submit"
+              onSubmit={onSubmit}
+            >Create</button>
           </div>
         </form>
       </div>

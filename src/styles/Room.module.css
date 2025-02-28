@@ -1,0 +1,59 @@
+.hide {
+  display: none;
+}
+.dsfvbg{
+    height: 100%;
+    padding: 5px;
+}
+.room {
+  width: 1000px;
+  height: calc(70% -10px);
+  background-color: #1a2125;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #36a0dd;
+  margin-bottom: 5px;
+}
+.header2 {
+  width: 100%;
+  height: 40px;
+  background-color: #36a0dd;
+  margin-bottom: 5px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 150px auto auto auto;
+  column-gap: 5px;
+  height: 160px;
+  margin-right: 150px;
+  padding: 0 20px;
+}
+.minorSetting {
+  background: #000;
+}
+.redTeam {
+  background: #ff0000;
+}
+.spectator {
+  background: #00ff00;
+}
+.blueTeam {
+  background: #0000ff;
+}
+.minorSetting2{
+    width: 160px;
+    height: 160px;
+    background-color: palegoldenrod;
+    margin: auto;
+}
+.messageBox {
+  width: 900px;
+  height: 30%;
+  background-color: #1a2125;
+  margin: auto;
+}

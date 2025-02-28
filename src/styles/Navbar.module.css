@@ -36,3 +36,6 @@
 .gameName:hover {
   color: white;
 }
+.hide{
+  display: none;
+}
