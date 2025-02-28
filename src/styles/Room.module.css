@@ -1,9 +1,6 @@
-.hide {
-  display: none;
-}
-.dsfvbg{
-    height: 100%;
-    padding: 5px;
+.dsfvbg {
+  height: 100%;
+  padding: 5px;
 }
 .room {
   width: 1000px;
@@ -45,15 +42,18 @@
 .blueTeam {
   background: #0000ff;
 }
-.minorSetting2{
-    width: 160px;
-    height: 160px;
-    background-color: palegoldenrod;
-    margin: auto;
+.minorSetting2 {
+  width: 160px;
+  height: 160px;
+  background-color: palegoldenrod;
+  margin: auto;
 }
 .messageBox {
   width: 900px;
   height: 30%;
   background-color: #1a2125;
   margin: auto;
+}
+.hide {
+  display: none;
 }

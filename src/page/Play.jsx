@@ -10,10 +10,10 @@ import Room from "../components/room";
 
 const Play = () => {
   // const [playActiveTab, setPlayActiveTab] = useState("chooseNick");
-  const [playActiveTab, setPlayActiveTab] = useState("room");
+  const [playActiveTab, setPlayActiveTab] = useState("chooseNick");
   const [nickname, setNickname] = useState("");
   // const [navbarHide, setNavbarHide] = useState(false)
-  const [navbarHide, setNavbarHide] = useState(true)
+  const [navbarHide, setNavbarHide] = useState(false)
 
   return (
     <>

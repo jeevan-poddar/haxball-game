@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Room.module.css";
 const Room = (props) => {
   return (
-    <div className={`${styles.dsfvbg}${props.playActiveTab === "room" ? "" : styles.hide}`}>
+    <div className={`${styles.dsfvbg} ${props.playActiveTab === "room" ? "" : styles.hide}`}>
       <div className={styles.room}>
         <div className={styles.rommHeader}>
           <div className={styles.header}></div>
